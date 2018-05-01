@@ -1,0 +1,4 @@
+{
+  "test.py::testfun": true,
+  "test.py::testfunc": true
+}
