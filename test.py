@@ -8,8 +8,6 @@ from pandas import Series, DataFrame
 from sklearn import datasets, svm
 # from test import testfunc
 
-def tt2(df1,df2):
-    print(df1.head(5))
 
 def testfunc(df_predict,df_true,com_var):
     df_merge = df_true.merge(df_predict, left_index=True, right_index=True)
@@ -26,4 +24,3 @@ if __name__ == '__main__':
     train_y2 = traindata.loc[:, ['Survived']]
     cc = testfunc(train_y,train_y2,'Survived')
     print(cc)
-    tt2(train_y2,train_y2)
